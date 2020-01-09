@@ -1,6 +1,6 @@
 {
   "name": "@kstudio/kadm-core",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha1",
   "description": "Fork from keystone, core of KAdm",
   "main": "index.js",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "https://github.com/keystonejs/keystone.git"
   },
   "dependencies": {
+    "@kstudio/kadm-fields": "0.1.0-alpha1",
     "async": "^2.6.2",
     "asyncdi": "^1.1.0",
     "babelify": "^10.0.0",
