@@ -13,6 +13,7 @@ module.exports = function createStaticRouter (keystone) {
 
 	var router = express.Router();
 
+	// TODO: 处理react-select的样式问题
 	/* Prepare LESS options */
 	var elementalPath = path.join(path.dirname(require.resolve('elemental')), '..');
 	var reactSelectPath = path.join(path.dirname(require.resolve('react-select')), '..');
