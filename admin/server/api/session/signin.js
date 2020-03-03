@@ -4,7 +4,7 @@ var session = require('../../../../lib/session');
 function signin (req, res) {
 	var keystone = req.keystone;
 	if (!keystone.security.csrf.validate(req)) {
-		return res.apiError(403, 'invalid csrf');
+		return res.status(403).json( { error: 'invalid csrf'} );
 	}
 	if (!req.body.email || !req.body.password) {
 		return res.status(401).json({ error: 'email and password required' });
